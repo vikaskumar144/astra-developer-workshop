@@ -45,7 +45,7 @@ city   | email          | userid                               | address      | 
     product_name text,
     product_category text,
     product_description text,
-    PRIMARY KEY ((product_category), productid));
+    PRIMARY KEY ((product_category), productid));`
     
 #### Insert some random data 
 	`INSERT INTO products (productid, product_name, product_category, product_description)
