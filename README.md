@@ -4,4 +4,4 @@
 
 
 ## Create keyspace and database
-'DESCRIBE KEYSPACE;'
+`DESCRIBE KEYSPACE;`
