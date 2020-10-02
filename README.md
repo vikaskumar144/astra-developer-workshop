@@ -11,21 +11,21 @@
 `use mytestapp;`
 
 #### Create table users_by_city
-`CREATE TABLE IF NOT EXISTS users_by_city ( 
+```CREATE TABLE IF NOT EXISTS users_by_city ( 
 	userid uuid,
 	first_name text,
 	last_name text,
 	email text,
 	city text,
 	address text,
-	PRIMARY KEY ((city), email, userid));`
+	PRIMARY KEY ((city), email, userid));```
   
  #### Insert some test data
-  `INSERT INTO users_by_city (userid, first_name, last_name, email, city, address)
-VALUES (now(), 'vikas', 'kumar', 'vikas@demo.com', 'delhi', '110092');`
+```INSERT INTO users_by_city (userid, first_name, last_name, email, city, address)
+VALUES (now(), 'vikas', 'kumar', 'vikas@demo.com', 'delhi', '110092');```
 
-`INSERT INTO users_by_city (userid, first_name, last_name, email, city, address)
-VALUES (now(), 'rahul', 'singh', 'rahul@demo.com', 'mumbai', 'andheri east');`
+```INSERT INTO users_by_city (userid, first_name, last_name, email, city, address)
+VALUES (now(), 'rahul', 'singh', 'rahul@demo.com', 'mumbai', 'andheri east');```
 
 #### Fetch data from table 
 `SELECT * from users_by_city;`
