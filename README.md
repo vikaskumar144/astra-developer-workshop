@@ -11,14 +11,14 @@
 `use mytestapp;`
 
 #### Create table users_by_city
-```CREATE TABLE IF NOT EXISTS users_by_city ( 
+`CREATE TABLE IF NOT EXISTS users_by_city ( 
 	userid uuid,
 	first_name text,
 	last_name text,
 	email text,
 	city text,
 	address text,
-	PRIMARY KEY ((city), email, userid));```
+	PRIMARY KEY ((city), email, userid));`
 
   
 #### Insert some test data
