@@ -39,8 +39,9 @@ city   | email          | userid                               | address      | 
  
  ```
  
-#### Create table products
-	`CREATE TABLE IF NOT EXISTS products (
+#### Create table product
+
+`CREATE TABLE IF NOT EXISTS products (
     productid uuid,
     product_name text,
     product_category text,
@@ -48,7 +49,8 @@ city   | email          | userid                               | address      | 
     PRIMARY KEY ((product_category), productid));`
     
 #### Insert some random data 
-	`INSERT INTO products (productid, product_name, product_category, product_description)
+
+`INSERT INTO products (productid, product_name, product_category, product_description)
 VALUES (now(), 'monitor', 'computer', 'HP 32 inch FHD monitor');`
 
 `INSERT INTO products (productid, product_name, product_category, product_description)
