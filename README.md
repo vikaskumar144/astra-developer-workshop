@@ -27,9 +27,11 @@ VALUES (now(), 'rahul', 'singh', 'rahul@demo.com', 'mumbai', 'andheri east');`
 
 `SELECT * from users_by_city;`
 
+```
 city   | email          | userid                               | address      | first_name | last_name
 --------+----------------+--------------------------------------+--------------+------------+-----------
   delhi | vikas@demo.com | dfbea2b0-048b-11eb-8d4b-e7907aa277e7 |       110092 |      vikas |     kumar
  mumbai | rahul@demo.com | 029bf580-048c-11eb-8d4b-e7907aa277e7 | andheri east |      rahul |     singh
  
+ ```
  
