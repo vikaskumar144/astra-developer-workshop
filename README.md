@@ -39,3 +39,30 @@ city   | email          | userid                               | address      | 
  
  ```
  
+#### Create table products
+	`CREATE TABLE IF NOT EXISTS products (
+    productid uuid,
+    product_name text,
+    product_category text,
+    product_description text,
+    PRIMARY KEY ((product_category), productid));
+    
+#### Insert some random data 
+	`INSERT INTO products (productid, product_name, product_category, product_description)
+VALUES (now(), 'monitor', 'computer', 'HP 32 inch FHD monitor');`
+
+`INSERT INTO products (productid, product_name, product_category, product_description)
+VALUES (now(), 'Keyboard', 'computer accessories', 'Dell US full keyboard');`
+
+`INSERT INTO products (productid, product_name, product_category, product_description)
+VALUES (now(), 'iphone 11', 'mobile', 'iphone 11 black color witrh 128 GB internal storage');`
+
+
+#### Fetch data from table 
+```
+product_category     | productid                            | product_description                                 | product_name
+----------------------+--------------------------------------+-----------------------------------------------------+--------------
+             computer | 55155d30-048f-11eb-8d4b-e7907aa277e7 |                              HP 32 inch FHD monitor |      monitor
+               mobile | a8354570-048f-11eb-8d4b-e7907aa277e7 | iphone 11 black color witrh 128 GB internal storage |    iphone 11
+ computer accessories | 75eea2a0-048f-11eb-8d4b-e7907aa277e7 |                               Dell US full keyboard |     Keyboard
+```
