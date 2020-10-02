@@ -19,13 +19,14 @@
 	city text,
 	address text,
 	PRIMARY KEY ((city), email, userid));```
-  
- #### Insert some test data
-`INSERT INTO users_by_city (userid, first_name, last_name, email, city, address)
-VALUES (now(), 'vikas', 'kumar', 'vikas@demo.com', 'delhi', '110092');```
 
-```INSERT INTO users_by_city (userid, first_name, last_name, email, city, address)
-VALUES (now(), 'rahul', 'singh', 'rahul@demo.com', 'mumbai', 'andheri east');```
+  
+#### Insert some test data
+`INSERT INTO users_by_city (userid, first_name, last_name, email, city, address)
+VALUES (now(), 'vikas', 'kumar', 'vikas@demo.com', 'delhi', '110092');`
+
+`INSERT INTO users_by_city (userid, first_name, last_name, email, city, address)
+VALUES (now(), 'rahul', 'singh', 'rahul@demo.com', 'mumbai', 'andheri east');`
 
 #### Fetch data from table 
 `SELECT * from users_by_city;`
