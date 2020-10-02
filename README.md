@@ -68,3 +68,15 @@ product_category     | productid                            | product_descriptio
                mobile | a8354570-048f-11eb-8d4b-e7907aa277e7 | iphone 11 black color witrh 128 GB internal storage |    iphone 11
  computer accessories | 75eea2a0-048f-11eb-8d4b-e7907aa277e7 |                               Dell US full keyboard |     Keyboard
 ```
+
+## CRUD operation in tables
+`UPDATE products
+SET product_description = 'DELL wireless keyboard and mouse combo'
+WHERE product_category = 'computer accessories' and productid= 75eea2a0-048f-11eb-8d4b-e7907aa277e7;`
+
+`SELECT * FROM products WHERE product_category = 'computer accessories' AND productid = 75eea2a0-048f-11eb-8d4b-e7907aa277e7;`
+```
+product_category     | productid                            | product_description                    | product_name
+----------------------+--------------------------------------+----------------------------------------+--------------
+ computer accessories | 75eea2a0-048f-11eb-8d4b-e7907aa277e7 | DELL wireless keyboard and mouse combo |     Keyboard
+```
